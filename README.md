@@ -21,8 +21,7 @@ Here,
 * Shift left: Performing logical shift left by shifting bits to left by ‘n’ bits and putting 0
 * Shift right: Performing logical shift right by shifting bits to right by ‘n’ bits and putting 0
 * Rotate left: Performing logical shift left by shifting bits to left by ‘n’ bits and putting rotated bits in empty place
-* Rotate left: Performing logical shift right by shifting bits to right by ‘n’ bits and putting rotated bits in empty 
-<br>
+* Rotate left: Performing logical shift right by shifting bits to right by ‘n’ bits and putting rotated bits in empty <br>
 **Encoding**
 <table>
   <tr>
@@ -51,3 +50,19 @@ Here,
     <td>rotate right</td>
   </tr>
 </table>
+
+## Running
+
+Clone the repository:
+
+```bash
+$ git clone https://github.com/mihirkestur/16-bit-shift-rotate-ALU.git
+```
+
+Run the testbench:
+
+```bash
+$ iverilog alu.v lib.v tb_shift.v
+$ vvp a.out
+$ gtkwave tb.vcd
+```
