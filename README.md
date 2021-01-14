@@ -3,6 +3,7 @@ This is an implementation of shift right, shift left, rotate left and rotate rig
 
 ## Output
 Output obtained when the operations are performed on the input i0 = 16'b1000000000000101
+*Please note that all numbers are in hexadecimal representation*
 
 <img src="https://github.com/mihirkestur/16-bit-shift-rotate-ALU/blob/main/image/outputwave.png">
 
@@ -15,4 +16,16 @@ Here,
 * **shift_left** : Ouput after performing shift left operation
 * **shift_right** : Ouput after performing shift right operation
 * **final_output** : This is the ouput after performing the operation
+
+## Working
+* Shift left: Performing logical shift left by shifting bits to left by ‘n’ bits and putting 0
+* Shift right: Performing logical shift right by shifting bits to right by ‘n’ bits and putting 0
+* Rotate left: Performing logical shift left by shifting bits to left by ‘n’ bits and putting rotated bits in empty place
+* Rotate left: Performing logical shift right by shifting bits to right by ‘n’ bits and putting rotated bits in empty 
+*encoding*
+choice[1] choice[0]
+  0         0       shift left
+  0         1       rotate left
+  1         0       shift right
+  1         1       rotate right
 
