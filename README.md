@@ -23,8 +23,19 @@ Here,
 * Rotate left: Performing logical shift left by shifting bits to left by ‘n’ bits and putting rotated bits in empty place
 * Rotate left: Performing logical shift right by shifting bits to right by ‘n’ bits and putting rotated bits in empty 
 *encoding*
-choice[1] choice[0]
-  0         0       shift left
+<table>
+  <tr>
+    <th>choice[1]</th>
+    <th>choice[0]</th>
+    <th>Operation</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>shift left</td>
+  </tr>
+</table>
+
   0         1       rotate left
   1         0       shift right
   1         1       rotate right
