@@ -22,7 +22,7 @@ Here,
 * Shift right: Performing logical shift right by shifting bits to right by ‘n’ bits and putting 0
 * Rotate left: Performing logical shift left by shifting bits to left by ‘n’ bits and putting rotated bits in empty place
 * Rotate left: Performing logical shift right by shifting bits to right by ‘n’ bits and putting rotated bits in empty 
-*encoding*
+**Encoding**
 <table>
   <tr>
     <th>choice[1]</th>
@@ -34,9 +34,19 @@ Here,
     <td>0</td>
     <td>shift left</td>
   </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>rotate left</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>shift right</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>rotate right</td>
+  </tr>
 </table>
-
-  0         1       rotate left
-  1         0       shift right
-  1         1       rotate right
-
